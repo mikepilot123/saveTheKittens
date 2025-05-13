@@ -4,156 +4,165 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Odeliver</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="calculator-handler.js" defer></script>
 </head>
 
 <body>
 
     <header>
-       <div class="header">
-
-        
-        <img  src="logo.png" class="logo">
-        <nav>
-            
-
-            <ul>
-
-                <li>
-                    <a href="#">Pricing</a>
-                </li>
-
-                <li>
-                    <a href="#">Company</a>
-                </li>
-
-                <li>
-                    <a href="#">Coverage</a>
-                </li>
-
-                <li>
-                    <a href="#">Developers</a>
-                </li>
-
-                <li>
-                    <a href="#">Developers</a>
-                </li>
+        <div class="header">
 
 
+            <img src="logo.png" class="logo">
+            <nav>
 
-            </ul>
 
-        </nav>
+                <ul>
 
-        <div class="auth-buttons">
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
 
-            <button class="logIn"> 
-                <img src="loginIcon.svg" >
-                <span>Log In</span>
-            </button>
-            
-           
-            <button class="register" >
-                <img src="registerIcon.svg">
-                <span>Register</span>
-            </button>
+                    <li>
+                        <a href="#">Company</a>
+                    </li>
 
-            
+                    <li>
+                        <a href="#">Coverage</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Developers</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Developers</a>
+                    </li>
+
+
+
+                </ul>
+
+            </nav>
+
+            <div class="auth-buttons">
+
+                <button class="logIn">
+                    <img src="loginIcon.svg">
+                    <span>Log In</span>
+                </button>
+
+
+                <button class="register">
+                    <img src="registerIcon.svg">
+                    <span>Register</span>
+                </button>
+
+
+
+            </div>
 
         </div>
-    
-       </div>
-        
+
     </header>
 
 
     <main>
 
         <section class="hero-section">
-           
-            <div class="header"> 
+
+            <div class="header">
                 <div class="left-content">
-                
+
                     <div>
                         <a href="tel: 1-868-235-4872"><i class="fa-solid fa-phone"></i>1-868-235-4872</a>
                     </div>
-                    
+
                     <div>
 
-                        <div class="hero-heading"> 
+                        <div class="hero-heading">
                             <img src="plane.svg" alt="Icon description">
                             <h1>More Than Just <br> <span class="deliveryTxt">Delivery</span></h1>
-                        
+
                         </div>
 
                     </div>
-                    
-                    
-
-                    <h2>Calculator</h2>
 
 
-                    <form>
+                    <div class="calculator-container">
+                        <h2>Calculator</h2>
 
-                        <div class="twoPartDropdowns">
-                            
-                            <div class="start-destination"> 
 
-                               <div class="destinationContainer">
+                        <form>
 
-                               <label>From City</label>
-                                <select class="start-destination-dropdown">
-                                    
-                                    <option value="select_city">Select City</option>
-                                    <option value="port_of_spain">Port Of Spain</option>
-        
-                                </select>
+                            <div class="twoPartDropdowns">
+
+                                <div class="start-destination" id="trigger-div">
+
+                                        <div class="destinationContainer">
+                                            <div> <label class="destination-header" for="native-select">From
+                                                    City</label></div>
+
+
+                                               <p class="start-destination-dropdown" >Select City</p>
+                      
+                                        </div>
+
+                                        <div>
+                                            <img src="chevron-down.svg" alt="Chevron Down" class="chevDown">
+                                        </div>
+
+                                        <select class="hidden-select">
+                                            <option>Port Of Spain</option>
+                                            <option>Chaguanas</option>
+                                        </select>
+                                  
+                                </div>
+
+                                <div class="end-destination">
+
+                                    <div class="destinationContainer">
+
+                                        <label class="destination-header">To City</label>
+                                        <select class="end-destination-dropdown">
+
+                                            <option value="select_city">Select City</option>
+                                            <option value="port_of_spain">Port Of Spain</option>
+
+                                        </select>
+
+                                    </div>
+
+
+                                    <div>
+                                        <img src="chevron-down.svg" alt="Chevron Down" class="chevDown">
+                                    </div>
+
 
                                 </div>
 
-                                
-                                <div>
-                                    <img src="chevron-down.svg" alt="Chevron Down" class="chevDown">
                                 </div>
-                                
-    
-                            </div>
-    
-                            <div class="end-destination"> 
-    
-                                <label>From City</label>
-                                <select class="end-destination-dropdown">
-                                    
-                                    <option value="select_city">Select City</option>
-                                    <option value="port_of_spain">Port Of Spain</option>
-        
-                                </select>
-    
-                            </div>
-                        
-                        </div>
+                        </form>
+                    
+                    </div>
 
-                    </form>
                 </div>
             </div>
-           
-                
+            </div>
+
+
 
             <div class="right-content">
 
-                <img src="heading.png" >
+                <img src="heading.png">
             </div>
-                
-       
-          
-
-           
 
         </section>
     </main>
